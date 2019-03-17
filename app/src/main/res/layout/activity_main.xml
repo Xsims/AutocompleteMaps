@@ -5,19 +5,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity"
     >
-  <fragment
-      android:id="@+id/autocomplete_fragment"
-      android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
-      android:layout_width="0dp"
-      android:layout_height="101dp"
-      android:layout_marginTop="28dp"
+  <LinearLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
+      >
+    <Button
+        android:id="@+id/main_activity_button_depart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:text="@string/depart"
+        android:textColor="@color/quantum_grey400"
+        />
+    <Button
+        android:id="@+id/main_activity_button_arrivee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:text="@string/arrivee"
+        android:textColor="@color/quantum_grey400"
+        />
+
+  </LinearLayout>
+
+
+  <TextView
+      android:id="@+id/main_activity_response_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/app_name"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout"
       />
+  <Button
+      android:id="@+id/main_activity_button_itinerary"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/button_search_itinerary"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/main_activity_response_view"
+      style="@style/Widget.AppCompat.Button"
+      />
+  <ScrollView
+      android:id="@+id/scrollView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/main_activity_button_itinerary"
+      >
+
+    <TextView
+        android:id="@+id/main_activity_response_itinerary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/itinerary"
+        />
+
+  </ScrollView>
 
 
 </android.support.constraint.ConstraintLayout>

@@ -1,3 +1,8 @@
 <resources>
   <string name="app_name">AutocompleteMaps</string>
+  <string name="error_api_key" translatable="false">No API key defined in gradle.properties</string>
+  <string name="depart">Départ</string>
+  <string name="arrivee">Arrivée</string>
+  <string name="itinerary">Itinéraire</string>
+  <string name="button_search_itinerary">Itinéraires</string>
 </resources>
