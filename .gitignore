@@ -1,6 +1,9 @@
 *.iml
 .gradle
 gradle.properties
+# Ignore gradle files
+.gradle/
+build/
 /local.properties
 /.idea/caches
 /.idea/libraries
