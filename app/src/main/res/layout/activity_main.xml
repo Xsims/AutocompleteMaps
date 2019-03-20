@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:layout_margin="8dp"
     >
   <LinearLayout
       android:id="@+id/linearLayout"
@@ -34,35 +35,12 @@
         android:text="@string/arrivee"
         android:textColor="@color/quantum_grey400"
         />
-
-  </LinearLayout>
-
-
-  <TextView
-      android:id="@+id/main_activity_response_view"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/app_name"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-      />
-  <Button
-      android:id="@+id/main_activity_button_itinerary"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/button_search_itinerary"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/main_activity_response_view"
-      style="@style/Widget.AppCompat.Button"
-      />
-  <ScrollView
-      android:id="@+id/scrollView2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/main_activity_button_itinerary"
-      >
-
+    <TextView
+        android:id="@+id/main_activity_response_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        />
     <TextView
         android:id="@+id/main_activity_response_itinerary"
         android:layout_width="wrap_content"
@@ -70,7 +48,28 @@
         android:text="@string/itinerary"
         />
 
-  </ScrollView>
+  </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+  <!-- Fragments Container -->
+
+
+
+  <Button
+      android:id="@+id/main_activity_button_itinerary"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/itinerary"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"/>
+
 
 
 </android.support.constraint.ConstraintLayout>
