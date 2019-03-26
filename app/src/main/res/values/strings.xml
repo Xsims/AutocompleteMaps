@@ -5,5 +5,11 @@
   <string name="arrivee">Arrivée</string>
   <string name="itinerary">Itinéraire</string>
   <string name="button_search_itinerary">Itinéraires</string>
+  <string name="toggle_button_bus">Bus</string>
+  <string name="toggle_button_metro">Métro</string>
+  <string name="toggle_button_train">Train</string>
+  <string name="toggle_button_tram">Tram</string>
+  <string name="title_activity_main">MainActivity</string>
+  <string name="toggle_button_tous">Tous</string>
 
 </resources>

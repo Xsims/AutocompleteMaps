@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controllers.Activities.MainActivity"
+    android:layout_margin="8dp"
+    >
+  <LinearLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      >
+    <Button
+        android:id="@+id/main_activity_button_depart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:text="@string/depart"
+        android:textColor="@color/quantum_grey400"
+        />
+    <Button
+        android:id="@+id/main_activity_button_arrivee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:text="@string/arrivee"
+        android:textColor="@color/quantum_grey400"
+        />
+    <LinearLayout
+        android:id="@+id/linearLayout_transit_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+      <CheckBox
+          style="@style/CustomCheckBox"
+          android:id="@+id/toggle_button_all"
+          android:checked="true"
+          android:text="@string/toggle_button_tous"
+          />
+      <CheckBox
+          style="@style/CustomCheckBox"
+          android:id="@+id/toggle_button_bus"
+          android:text="@string/toggle_button_bus"
+          />
+      <CheckBox
+          style="@style/CustomCheckBox"
+          android:id="@+id/toggle_button_metro"
+          android:text="@string/toggle_button_metro"
+          />
+      <CheckBox
+          style="@style/CustomCheckBox"
+          android:id="@+id/toggle_button_train"
+          android:text="@string/toggle_button_train"
+          />
+      <CheckBox
+          style="@style/CustomCheckBox"
+          android:id="@+id/toggle_button_tram"
+          android:text="@string/toggle_button_tram"
+          />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/main_activity_response_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        />
+
+  </LinearLayout>
+
+
+
+  <Button
+      android:id="@+id/main_activity_button_itinerary"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/itinerary"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>
