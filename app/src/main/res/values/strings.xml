@@ -1,5 +1,5 @@
 <resources>
-  <string name="app_name">AutocompleteMaps</string>
+  <string name="app_name">WakeMiiUp</string>
   <string name="error_api_key" translatable="false">No API key defined in gradle.properties</string>
   <string name="depart">Départ</string>
   <string name="arrivee">Arrivée</string>
@@ -11,5 +11,7 @@
   <string name="toggle_button_tram">Tram</string>
   <string name="title_activity_main">MainActivity</string>
   <string name="toggle_button_tous">Tous</string>
+  <string name="_0_min">0 min</string>
+  <string name="activity_name_add_alarm">New Alarm</string>
 
 </resources>
